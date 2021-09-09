@@ -508,27 +508,28 @@ textarea.input {
   text-align: center;
 }
 
-.header-block__suptitle {
+.suptitle {
   font-family: "Ubuntu";
   color: #b4ad9e;
   text-transform: uppercase;
   line-height: 171.4285714286%;
-  margin: 0px 0px 1.1428571429em 0px;
 }
-.header-block__link {
+
+.link {
   color: inherit;
 }
-.header-block__title {
+
+.title {
   font-size: 30px;
-  line-height: 80%;
+  line-height: 126.6666666667%;
 }
 @media (max-width: 900px) {
-  .header-block__title {
+  .title {
     font-size: calc(24px + 6 * ((100vw - 320px) / 580));
   }
 }
 @media (any-hover: hover) {
-  .header-block__title:hover {
+  .title:hover {
     text-decoration: underline;
   }
 }
@@ -989,7 +990,6 @@ body.ie ._ibg img {
     padding-bottom: calc(50px + 80 * ((100vw - 320px) / 580));
   }
 }
-
 .hero__container {
   padding: 0;
   max-width: 1062px;
@@ -1002,8 +1002,11 @@ body.ie ._ibg img {
 .about__body > *:last-child {
   margin-bottom: 0;
 }
-.about__header {
-  margin: 0px 0px 30px 0px;
+.about__suptitle {
+  margin: 0px 0px 1.4285714286em 0px;
+}
+.about__title {
+  margin: 0px 0px 1.3333333333em 0px;
 }
 .about__text {
   margin-bottom: 50px;
@@ -1013,7 +1016,7 @@ body.ie ._ibg img {
     margin-bottom: calc(30px + 20 * ((100vw - 320px) / 580));
   }
 }
-.about__link {
+.about__comment {
   display: inline-block;
   font-family: "Ubuntu";
   color: #b4ad9e;
@@ -1022,7 +1025,52 @@ body.ie ._ibg img {
   margin: 0px 0px 1.1428571429em 0px;
 }
 @media (any-hover: hover) {
-  .about__link:hover {
+  .about__comment:hover {
     text-decoration: underline;
+  }
+}
+
+.news__body {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  column-gap: 60px;
+  row-gap: 130px;
+}
+@media (max-width: 900px) {
+  .news__body {
+    column-gap: calc(0px + 60 * ((100vw - 320px) / 580));
+  }
+}
+@media (max-width: 900px) {
+  .news__body {
+    row-gap: calc(60px + 70 * ((100vw - 320px) / 580));
+  }
+}
+
+.item-news {
+  display: grid;
+  row-gap: 15px;
+}
+@media (max-width: 900px) {
+  .item-news {
+    row-gap: calc(10px + 5 * ((100vw - 320px) / 580));
+  }
+}
+.item-news__image {
+  display: block;
+  padding: 0px 0px 66.6666666667% 0px;
+  overflow: hidden;
+}
+.item-news__image img {
+  transition: transform 0.3s ease 0s;
+}
+@media (any-hover: hover) {
+  .item-news__image img:hover {
+    transform: scale(1.05);
+  }
+}
+@media (max-width: 479.98px) {
+  .item-news__image {
+    margin: 0px -15px;
   }
 }
