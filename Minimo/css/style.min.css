@@ -990,6 +990,23 @@ body.ie ._ibg img {
     padding-bottom: calc(50px + 80 * ((100vw - 320px) / 580));
   }
 }
+.page__news {
+  padding-bottom: 120px;
+}
+@media (max-width: 900px) {
+  .page__news {
+    padding-bottom: calc(50px + 70 * ((100vw - 320px) / 580));
+  }
+}
+.page__sign-up {
+  margin-bottom: 100px;
+}
+@media (max-width: 900px) {
+  .page__sign-up {
+    margin-bottom: calc(50px + 50 * ((100vw - 320px) / 580));
+  }
+}
+
 .hero__container {
   padding: 0;
   max-width: 1062px;
@@ -1073,4 +1090,60 @@ body.ie ._ibg img {
   .item-news__image {
     margin: 0px -15px;
   }
+}
+
+.sign-up {
+  background-color: #f0f0f0;
+}
+.sign-up__body {
+  text-align: center;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+@media (max-width: 900px) {
+  .sign-up__body {
+    padding-top: calc(40px + 30 * ((100vw - 320px) / 580));
+  }
+}
+@media (max-width: 900px) {
+  .sign-up__body {
+    padding-bottom: calc(40px + 30 * ((100vw - 320px) / 580));
+  }
+}
+.sign-up__title {
+  color: #333333;
+  letter-spacing: 0.025em;
+  margin-bottom: 70px;
+}
+@media (max-width: 900px) {
+  .sign-up__title {
+    margin-bottom: calc(30px + 40 * ((100vw - 320px) / 580));
+  }
+}
+@media (any-hover: hover) {
+  .sign-up__title:hover {
+    text-decoration: none;
+  }
+}
+
+.form {
+  max-width: 400px;
+  margin: 0px auto;
+}
+.form__item {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #000;
+  padding: 0px 0px 8px 5px;
+}
+.form__input {
+  flex: 1 1 auto;
+  background-color: inherit;
+  line-height: 171.4285714286%;
+  margin: 0px 20px 0px 0px;
+  color: #626262;
+}
+.form__button {
+  color: #626262;
+  font-size: 24px;
 }
