@@ -729,6 +729,7 @@ body.ie ._ibg img {
   width: 100%;
   top: 0;
   left: 0;
+  z-index: 50;
   transition: background-color 0.3s ease 0s;
 }
 .header._scroll {
@@ -756,7 +757,6 @@ body.ie ._ibg img {
   justify-content: space-between;
   min-height: 164px;
   padding: 5px 0px;
-  z-index: 50;
   transition: min-height 0.3s ease 0s;
 }
 @media (max-width: 991.98px) {
@@ -945,4 +945,12 @@ body.ie ._ibg img {
 */
 .page {
   flex: 1 1 auto;
+}
+.hero__container {
+  padding: 0;
+  max-width: 1062px;
+}
+.hero__image {
+  min-height: 480px;
+  padding: 0px 0px 63.5593220339% 0px;
 }
