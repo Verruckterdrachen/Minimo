@@ -95,9 +95,9 @@ body {
 		@include adaptiv-value("padding-bottom", 130, 50, 1);
 	}
 	&__news {
-		@include adaptiv-value("padding-bottom", 120, 50, 1);
 	}
 	&__sign-up {
+		@include adaptiv-value("margin-top", 120, 50, 1);
 		@include adaptiv-value("margin-bottom", 100, 50, 1);
 	}
 }
@@ -144,11 +144,32 @@ body {
 }
 //====================================================================================================
 .news {
+	text-align: center;
 	&__body {
 		display: grid;
 		grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
 		@include adaptiv-value("column-gap", 60, 0, 1);
 		@include adaptiv-value("row-gap", 130, 60, 1);
+	}
+	&__button {
+		display: inline-flex;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		padding: 0px 30px;
+		min-height: 58px;
+		border: 1px solid $mainColor;
+		color: inherit;
+		font-size: 20px;
+		line-height: math.div(24, 20) * 100%;
+		@include adaptiv-value("margin-top", 160, 60, 1);
+		transition: all 0.3s ease 0s;
+		@media (any-hover: hover) {
+			&:hover {
+				color: #fff;
+				background-color: $mainColor;
+			}
+		}
 	}
 }
 .item-news {
