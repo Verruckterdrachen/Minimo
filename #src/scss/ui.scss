@@ -1,5 +1,28 @@
 //<ОСНОВНОЙ БЛОК>====================================================================================================
-
+.header-block {
+	&__suptitle {
+		font-family: "Ubuntu";
+		color: $primaryColor;
+		text-transform: uppercase;
+		line-height: math.div(24, $fontSize) * 100%;
+		margin: 0px 0px math.div(16, $fontSize) * 1em 0px;
+	}
+	&__link {
+		color: inherit;
+	}
+	&__title {
+		@include adaptiv-value("font-size", 30, 24, 1);
+		line-height: math.div(24, 30) * 100%;
+		@media (any-hover: hover) {
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+}
+.text {
+	line-height: math.div(24, $fontSize) * 100%;
+}
 //</ОСНОВНОЙ БЛОК>====================================================================================================
 
 //<ГОТОВЫЕ КЛАССЫ>====================================================================================================
